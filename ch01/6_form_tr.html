@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    thead {
+        width: 500px;
+        height: 70px;
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+    }
+
+    tbody {
+        position: relative;
+        top: 20px;
+    }
+
+    #top td:nth-child(4) {
+        position: relative;
+        left: -350px;
+    }
+
+    .input_box {
+        height: 30px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    select {
+        height: 35px;
+    }
+
+    .number_box1 {
+        width: 50px;
+        height: 30px;
+        margin-top: 20px;
+        position: relative;
+        left: -100px;
+        top: -9px;
+    }
+
+    .number_box2 {
+        width: 50px;
+        height: 30px;
+        margin-top: 20px;
+        position: relative;
+        left: -545px;
+        top: -9px;
+    }
+
+    .hyphen1 {
+        position: relative;
+        left: 3px;
+    }
+
+    .hyphen2 {
+        position: relative;
+        left: -90px;
+        top: -10px;
+    }
+
+    #notice {
+        position: relative;
+        top: 30px;
+        left: -150px;
+    }
+
+    #check_box {
+        position: relative;
+        left: 28px;
+    }
+
+    button {
+        width: 100px;
+        height: 40px;
+        position: relative;
+        top: 200px;
+        left: 120px;
+        margin-right: 10px;
+    }
+
+    #agree_text01 {
+        position: relative;
+        top: 100px;
+        font-size: 20px;
+    }
+
+    #agree_box01 {
+        position: relative;
+        top: 100px;
+        border:1px solid lightgray;
+        background-color:floralwhite;
+        width: 600px;
+        height: 250px;
+    }
+
+    #agree_box01 p {
+        width: 400px;
+        height: 130px;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -70%);
+    }
+
+
+    .textarea01 {
+        width: 400px;
+        height: 130px;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -70%);
+    }
+
+    #agree_text02 {
+        position: relative;
+        top: 150px;
+        font-size: 20px;
+    }
+
+    #agree_box02 {
+        position: relative;
+        top: 150px;
+        border:1px solid lightgray;
+        background-color:floralwhite;
+        width: 600px;
+        height: 250px;
+    }
+
+    .textarea02 {
+        width: 400px;
+        height: 130px;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -70%);
+    }
+
+    
+    #agree_box02 p {
+        width: 400px;
+        height: 130px;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -70%);
+    }
+
+
+</style>
+
+<body>
+    <form method="" action="" enctype="">
+        <table>
+            <thead>
+                <tr id="top">
+                    <td>회원구분</td>
+                    <td><input type="radio">개인회원</td>
+                    <td><input type="radio">사업자회원</td>
+                    <td><input type="radio">외국인회원(foreigner)></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>아이디</td>
+                    <td><input type="text" class="input_box"></td>
+                    <td>(영문소문자/숫자, 4~16자)</td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type="password" class="input_box"></td>
+                    <td>(영문대소문자/숫자/특수문자 중 2가지 이상 조합, 8자~16자)</td>
+                </tr>
+                <tr>
+                    <td>비밀번호 확인</td>
+                    <td><input type="password" class="input_box"></td>
+                </tr>
+                <tr>
+                    <td>이름</td>
+                    <td><input type="text" class="input_box"></td>
+                </tr>
+                <tr>
+                    <td>휴대전화</td>
+                    <td>
+                        <select>
+                            <option>010</option>
+                            <option>011</option>
+                            <option>016</option>
+                            <option>017</option>
+                            <option>018</option>
+                            <option>019</option>
+                        </select>
+                        <span class="hyphen1">-</span>
+                    </td>
+                    <td><input type="text" class="number_box1"><span class="hyphen2">-</span></td>
+                    <td><input type="text" class="number_box2"></td>
+                </tr>
+                <tr>
+                    <td>이메일</td>
+                    <td><input type="email" class="input_box"></td>
+                </tr>
+                <tr>
+                    <td>이메일 수신 여부</td>
+                    <td id="check_box"><input type="checkbox">동의함</td>
+                    <td id="notice">쇼핑몰에서 제공하는 유익한 이벤트 소식을 이메일로 받으실 수 있습니다.</td>
+                </tr>
+            </tbody> 
+        </table>
+    </form>
+
+    <p id="agree_text01">이용약관 동의</p>
+
+    <div id="agree_box01">
+        <textarea class="textarea01">제1조(목적)이 약관은 OO 회사(전자상거래 사업자)가 운영하는 OO 사이버 몰(이하 “몰”이라 한다)에서 
+            제공하는 인터넷 관련 서비스(이하 “서비스”라 한다)를 이용함에 있어 사이버 몰과 이용자의 권리․의무 및 책임사항을 
+            규정함을 목적으로 합니다.
+            ※「PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다.」
+        </textarea>
+
+        <p>이용약관에 동의하십니까?
+            <input type="checkbox">
+            <span>동의함</span>
+        </p>
+    </div>
+
+    <p id="agree_text02">개인수집 및 이용 동의</p>
+
+    <div id="agree_box02">
+        <textarea class="textarea02">제1조(목적)이 약관은 OO 회사(전자상거래 사업자)가 운영하는 OO 사이버 몰(이하 “몰”이라 한다)에서 
+            제공하는 인터넷 관련 서비스(이하 “서비스”라 한다)를 이용함에 있어 사이버 몰과 이용자의 권리․의무 및 책임사항을 
+            규정함을 목적으로 합니다.※「PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다.」
+        </textarea>
+
+        <p>이용약관에 동의하십니까?
+            <input type="checkbox">
+            <span>동의함</span>
+        </p>
+    </div>
+
+    <button>회원가입</button>
+    <button>회원가입 취소</button>
+</body>
+
+</html>
