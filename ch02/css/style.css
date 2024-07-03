@@ -1,0 +1,14 @@
+* {
+    background-color: cornflowerblue;
+}
+
+#box {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #fff;
+}
+
+#box p {
+    background-color: transparent ;
+}
+

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+</head>
+
+<style>
+    table {
+        width: 800px;
+        height: 250px;
+        text-align: center;
+        margin-top: -30px;
+    }
+
+    table, th, tr { 
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        border-collapse: collapse;
+    }
+
+    th {
+        font-size: 13px; 
+    }
+
+    td {
+        font-size: 13px;
+    }
+
+    tr:nth-child(2) td:nth-child(10) {
+        position: relative;
+        left: 95px;
+    }
+
+    tr:nth-child(2) td:nth-child(9) {
+        position: relative;
+        left: 95px;
+    }
+
+    tr th:nth-child(8) {
+        position: relative;
+        left: 20px;
+    }
+            
+    select {
+        width: 120px;
+        height: 30px;
+        margin-bottom: 10px;
+    } 
+
+    #input_text { 
+        width: 150px;
+        height: 25px ;
+    }
+
+    .input_date { 
+        width: 150px;
+        height: 25px ;
+    }
+
+    #form_button {
+        position: relative;
+        top: 50px; 
+    }
+
+    #number {
+        width: 150px;
+        position: relative;
+        top:-30px;
+        left: 650px;
+    }
+
+    .group_list {
+        position: relative;
+        left: 90px;
+    }
+
+    .group_use {
+        position: relative;
+        left: 90px;
+    }
+
+    .group_name {
+        position: relative;
+        left: 80px;
+    }
+
+
+
+</style>
+
+<body>
+    <h1>Code</h1>
+
+    <div>
+        <select>
+            <option>N</option>
+        </select>
+        <select>
+            <option>Y</option>
+        </select>
+        <select>
+            <option>수정일</option>
+        </select>
+
+        <input type="text" placeholder="2024-06-03" class="input_date">
+        <input type="text" placeholder="2024-07-03" class="input_date">
+
+        <br>    
+
+        <select>
+            <option>검색구분</option>
+        </select>
+
+        <input type="text" placeholder="검색어" id="input_text">
+
+        <button>검색</button>
+        <button>돌아가기</button>
+    </div>
+
+    <p>Total:171</p>
+
+    <select id="number">
+        <option>5</option>
+    </select>
+
+    <table>
+        <tr>
+            <th><input type="checkbox"></th>
+            <th>#</th>
+            <th>코드그룹코드</th>
+            <th>코드그룹이름</th>
+            <th>코드</th>
+            <th>대체코드</th>
+            <th>코드이름(영문)</th>
+            <th>사용</th>
+            <th>순서</th>
+            <th>등록일</th>
+            <th>수정일</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>171</td>
+            <td>57</td>
+            <td>테테테</td>
+            <td>278</td>
+            <td class="group_name">ㅁㄴㅇㄹ</td>
+            <td class="group_use">Y</td>
+            <td class="group_list">1</td>
+            <td>2023-10-12</td>
+            <td>2023-10-12</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>170</td>
+            <td>33</td>
+            <td>로그인로그인UI</td>
+            <td>272</td>
+            <td class="group_name">사용자</td>
+            <td class="group_use">Y</td>
+            <td class="group_list">1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>169</td>
+            <td>33</td>
+            <td>로그인로그인UI</td>
+            <td>273</td>
+            <td class="group_name">사용자</td>
+            <td class="group_use">Y</td>
+            <td class="group_list">1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>168</td>
+            <td>32</td>
+            <td>qna.타입</td>
+            <td>266</td>
+            <td class="group_name">기타</td>
+            <td class="group_use">Y</td>
+            <td class="group_list">1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>167</td>
+            <td>31</td>
+            <td>qna.상태</td>
+            <td>262</td>
+            <td class="group_name">미확인</td>
+            <td class="group_use">Y</td>
+            <td class="group_list">1</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <button id="form_button"><a href="./form.html">form</a></button>
+
+    
+</body>
+</html>
