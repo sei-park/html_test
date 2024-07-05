@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>from01</title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(235, 235, 235);
+    }
+
+    .nav {
+        background-color: #fff;
+        width: 280px;
+        border: 1px solid lightgray;
+        height: 1000px;
+    }
+
+    .nav01 {
+        margin-left: 30px;
+    }
+
+    .nav01 ul li:nth-child(1) {
+        color: blue;
+    }
+
+    .nav02 {
+        margin-left: 30px;
+    }
+
+    ul li {
+        list-style: none;
+        margin-top: 15px;
+    }
+
+    .container {
+        position: absolute;
+        top: 0;
+        left: 300px;
+        width: 1603px;
+        height: 500px;
+        float: right;
+    }
+
+    .container p span {
+        color: blue;
+    }
+
+    table {
+        border:1px solid lightgray;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+
+    tr p {
+        font-weight: bold;
+        font-size: 13px;
+        position: relative;
+        left: 5px;
+        top: 10px;
+        color: gray;
+    }
+
+    tr:nth-child(3) td:nth-child(2) {
+        position: relative;
+        left: -10px;
+    }
+
+    select {
+        width: 200px;
+        height: 35px;
+    }
+
+    input {
+        width: 200px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    button {
+        background-color: #fff;
+        width: 50px;
+        height: 30px;
+        border-radius: 6px;
+        position: relative;
+        top:70px;
+        left: 5px;
+    }
+
+    textarea {
+        width: 425px;
+        height: 100px;
+    }
+
+    button a {
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+        color: #000;
+    }
+
+
+
+
+</style>
+
+<body>
+    <div class="nav">
+        <div class="nav01">
+            <p>Home</p>
+            <ul>
+                <li>E commerce</li>
+                <li>Project management</li>
+                <li>CRM</li>
+                <li>Social feed</li>
+            </ul>
+        </div>
+        <div class="nav02">
+            <p>APPS</p>
+            <ul>
+                <li>E commerce</li>
+                <li>CRM</li>
+                <li>Project management</li>
+                <li>Chat</li>
+                <li>Email</li>
+                <li>Events</li>
+                <li>Kanban</li>
+                <li>Social</li>
+                <li>Calendar</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container"> 
+        <p><span>page1 >  page2 ></span> Default</p>
+        <h1>code</h1>
+
+        <table>
+            <h3>기본정보</h3>
+            
+            <tr>
+                <td>
+                    <p>코드그룹</p>
+                    <select>
+                        <option>선택하세요</option>
+                    </select>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>코드</p>
+                    <input type="text" placeholder="자동생성">
+                </td>
+                <td>
+                    <p>코드(ANOTHER)</p>
+                    <input type="text" placeholder="영대소문자, 숫자">
+                </td>
+                <td>
+                    <p>코드 이름</p>
+                    <input type="text" placeholder="한글, 영대소문자, 숫자">
+                </td>
+                <td>
+                    <p>코드 이름(영문)</p>
+                    <input type="text" placeholder="영대소문자, 숫자">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>사용여부</p>
+                    <select>
+                        <option>사용</option>
+                    </select>
+                </td>
+                <td>
+                    <P>순서</P>
+                    <input type="text">
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p>설명</p>
+                    <textarea></textarea>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>다국어1</p>
+                    <input type="text">
+                </td>
+                <td>
+                    <p>다국어2</p>
+                    <input type="text">
+                </td>
+                <td>
+                    <p>다국어3</p>
+                    <input type="text">
+                </td>
+                <td>
+                    <p>다국어4</p>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>다국어5</p>
+                    <input type="text">
+                </td>
+                <td>
+                    <p>다국어6</p>
+                    <input type="text">
+                </td>
+                <td>
+                    <p>다국어7</p>
+                    <input type="text">
+                </td>
+                <td>
+                    <p>다국어8</p>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>예비1(VARCHAR TYPE)</p>
+                    <input type="text">
+                </td>
+                <td>
+                    <p>예비2(VARCHAR TYPE)</p>
+                    <input type="text">
+                </td>
+                <td>
+                    <p>예비3(VARCHAR TYPE)</p>
+                    <input type="text">
+                </td>
+                <td>
+                    <p>예비4(VARCHAR TYPE)</p>
+                    <input type="text">
+                </td>    
+            </tr>
+            <tr>
+                <td>
+                    <p>예비1(INT TYPE)</p>
+                    <input type="text">
+                </td>
+                <td>
+                    <p>예비2(INT TYPE)</p>
+                    <input type="text">
+                </td>
+                <td>
+                    <p>예비3(INT TYPE)</p>
+                    <input type="text">
+                </td>
+                <td>
+                    <p>예비4(INT TYPE)</p>
+                    <input type="text">
+                </td>
+            </tr>
+        </table>
+
+        <button><a href="./list01.html">list</a></button>
+    </div>
+
+
+</body>
+
+</html>

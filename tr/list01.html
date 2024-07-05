@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list01</title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(235, 235, 235);
+    }
+    
+    /* 메뉴 */
+    .nav {
+        background-color: #fff;
+        width: 280px;
+        border: 1px solid lightgray;
+        height: 1000px;
+    }
+
+    .nav01 {
+        margin-left: 30px;
+    }
+
+    .nav01 ul li:nth-child(1) {
+        color: blue;
+    }
+
+    .nav02 {
+        margin-left: 30px;
+    }
+
+    ul li {
+        list-style: none;
+        margin-top: 15px;
+    }
+
+    /* 테이블 */
+    .container {
+        position: absolute;
+        top: 0;
+        left: 300px;
+        width: 1603px;
+        height: 500px;
+        float: right;
+    }
+
+    .container p span {
+        color: blue;
+    }
+
+    select {
+        width: 200px;
+        height: 35px;
+        margin-bottom: 10px;
+    }
+
+    .input-text {
+        width: 191px;
+        height: 30px;
+    }
+
+    .top-button {
+        background-color: #fff;
+        border: 1px solid gray;
+        border-radius: 5px;
+        height: 30px;
+    }
+
+    .select-number {
+        position: absolute;
+        right: 10px;
+        bottom: 190px;
+    }
+
+    table {
+        width: 1603px;
+        height: 550px;
+    }
+
+    table, th, tr { 
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        border-collapse: collapse;
+        background-color: #fff;
+    }
+
+    td {
+        font-size: 14px;
+        position: relative;
+        left: 13px;
+    }
+
+    .group-code {
+        position: relative;
+        left: 95px;
+    }
+
+    .group-name {
+        position: relative;
+        left: -5px;
+        text-align: center;
+    }
+
+    .code {
+        position: relative;
+        left: 23px;
+    }
+
+    .code-name {
+        position: relative;
+        left: 43px;
+        color: blue;
+    }
+
+    .code-name-eng {
+        position: relative;
+        left: 90px;
+    }
+
+    .use {
+        position: relative;
+        left: 30px;
+    }
+    
+    .turn {
+        position: relative;
+        left: 30px;
+    }
+    
+    .register {
+        transform: translateX(75px);
+    }
+
+    .bottom-button {
+        background-color: #fff;
+        width: 50px;
+        height: 30px;
+        border-radius: 6px;
+        position: relative;
+        top:70px;
+        left: 5px;
+    }
+
+    .bottom-button a {
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .pagination {
+        position: relative;
+        left: 35%;
+    }
+
+    .pagination ul li {
+        width: 40px;
+        height: 40px;
+        float: left; 
+        margin-left: 10px;
+        font-weight: bold;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .pagination ul li:nth-child(1) {
+        background-color:dodgerblue;
+        color: #fff;   
+    }
+
+
+ 
+</style>
+
+<body>
+    <div class="nav">
+        <div class="nav01">
+            <p>Home</p>
+            <ul>
+                <li>E commerce</li>
+                <li>Project management</li>
+                <li>CRM</li>
+                <li>Social feed</li>
+            </ul>
+        </div>
+        <div class="nav02">
+            <p>APPS</p>
+            <ul>
+                <li>E commerce</li>
+                <li>CRM</li>
+                <li>Project management</li>
+                <li>Chat</li>
+                <li>Email</li>
+                <li>Events</li>
+                <li>Kanban</li>
+                <li>Social</li>
+                <li>Calendar</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <p><span>page1 > page2 ></span> Default</p>
+        <h1>code</h1>
+
+        <h3>기본정보</h3>
+
+        <select>
+            <option>N</option>
+        </select>
+        <select>
+            <option>Y</option>
+        </select>
+        <select>
+            <option>수정일</option>
+        </select>
+
+        <input type="text" placeholder="2024-06-05" class="input-text">
+        <input type="text" placeholder="2024-07-05" class="input-text">
+
+        <br>
+
+        <select>
+            <option>검색구분</option>
+        </select>
+
+        <input type="text" placeholder="검색어" class="input-text">
+
+        <button class="top-button">검색하기</button>
+        <button class="top-button">돌아가기</button>
+ 
+        <h3>Total: 171</h3>
+
+        <select class="select-number">
+            <option>5</option>
+        </select>
+
+        <table>
+            <tr>
+                <th>
+                    <input type="checkbox">
+                </th>
+                <th>#</th>
+                <th>코드그룹코드</th>
+                <th>코드그룹이름</th>
+                <th>코드</th>
+                <th>대체코드</th>
+                <th>코드이름</th>
+                <th>코드이름(영문)</th>
+                <th>사용</th>
+                <th>순서</th>
+                <th>등록일</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>171</td>
+                <td class="group-code">57</td>
+                <td class="group-name">테테테</td>
+                <td class="code">278</td>
+                <td></td>
+                <td class="code-name">ㅁㄴㅇㄹ</td>
+                <td></td>
+                <td class="use">Y</td>
+                <td class="turn">1</td>
+                <td class="register">2023-10-12 16:02:31</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>170</td>
+                <td class="group-code">33</td>
+                <td class="group-name">로그인,로그인UI</td>
+                <td class="code">272</td>
+                <td></td>
+                <td class="code-name">사용자</td>
+                <td></td>
+                <td class="use">Y</td>
+                <td class="turn">1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>169</td>
+                <td class="group-code">33</td>
+                <td class="group-name">로그인,로그인UI</td>
+                <td class="code">273</td>
+                <td></td>
+                <td class="code-name">관리자</td>
+                <td></td>
+                <td class="use">Y</td>
+                <td class="turn">1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>168</td>
+                <td class="group-code">32</td>
+                <td class="group-name">qna.타입</td>
+                <td class="code">266</td>
+                <td></td>
+                <td class="code-name">기타</td>
+                <td></td>
+                <td class="use">Y</td>
+                <td class="turn">1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>167</td>
+                <td class="group-code">31</td>
+                <td class="group-name">qna.상태</td>
+                <td class="code">262</td>
+                <td></td>
+                <td class="code-name">미확인</td>
+                <td></td>
+                <td class="use">Y</td>
+                <td class="turn">1</td>
+                <td></td>
+            </tr> 
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>161</td>
+                <td class="group-code">29</td>
+                <td class="group-name">몰.자전거.구동방식</td>
+                <td class="code">253</td>
+                <td></td>
+                <td class="code-name">인간</td>
+                <td></td>
+                <td class="use">Y</td>
+                <td class="turn">1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>160</td>
+                <td class="group-code">29</td>
+                <td class="group-name">몰.자전거.타이어</td>
+                <td class="code">254</td>
+                <td></td>
+                <td class="code-name">전기</td>
+                <td></td>
+                <td class="use">Y</td>
+                <td class="turn">2</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>159</td>
+                <td class="group-code">28</td>
+                <td class="group-name">몰.자전거.타이어</td>
+                <td class="code">248</td>
+                <td></td>
+                <td class="code-name">클린처</td>
+                <td class="code-name-eng">Clincher</td>
+                <td class="use">Y</td>
+                <td class="turn">1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>158</td>
+                <td class="group-code">28</td>
+                <td class="group-name">몰.자전거.타이어</td>
+                <td class="code">249</td>
+                <td></td>
+                <td class="code-name">튜브리스</td>
+                <td class="code-name-eng">Tubeless</td>
+                <td class="use">Y</td>
+                <td class="turn">2</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>157</td>
+                <td class="group-code">28</td>
+                <td class="group-name">몰.자전거.타이어</td>
+                <td class="code">250</td>
+                <td></td>
+                <td class="code-name">튜블러</td>
+                <td class="code-name-eng">Tubular</td>
+                <td class="use">Y</td>
+                <td class="turn">3</td>
+                <td></td>
+            </tr>
+        </table>
+
+        <button class="bottom-button"><a href="./form01.html">form</a></button>
+        
+        <div class="pagination">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>></li>
+            </ul>
+        </div>
+
+    </div> <!--container-->
+
+
+</body>
+
+</html>
