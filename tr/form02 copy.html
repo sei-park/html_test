@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>list02</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<style>
+    body {
+        background-color: rgb(235, 235, 235);
+    }
+
+    /*우측 메뉴*/
+    .nav {
+        background-color: #fff;
+        width: 280px;
+        border: 1px solid lightgray;
+        height: 1000px;
+    }
+
+    .nav01 {
+        margin-top: 30px;
+        margin-left: 30px;
+        height: 200px; 
+    }
+
+    .nav01 ul li:nth-child(1) {
+        color: blue;
+    }
+
+    .nav02 {
+        height: 500px;
+        margin-top: -250px;
+        margin-left: 30px;
+    }
+
+    ul li {
+        list-style: none;
+        margin-top: 15px;
+    }
+
+    /*container*/
+    .container {
+        margin-top: -950px;
+    }
+
+    .page span {
+        color: blue;
+    }
+
+    h1 {
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 23px;
+    }
+  
+    .display-none {
+        display: none;
+    }
+
+    .row {
+        position: relative;
+        top: 50px;
+        margin-right: 200px;
+        background-color: #fff;
+    }
+
+    .col {
+        transform: translateY(-8px);
+    }
+
+    .col p {
+        position: relative;
+        top: 13px;
+        font-size: 14px;
+    }
+
+    select {
+        width: 250px;
+        height: 30px;
+        border-radius: 8px;
+        border-width: 0.05cap;
+        border-color: gray;
+    }
+
+    input {
+        width: 250px;
+        height: 30px;
+        border-radius: 8px;
+        border-width: 0.05cap;
+        border-color: gray;
+    }
+
+    textarea {
+        width: 530px;
+        height: 130px;
+        border-radius: 8px;
+        border-width: 0.05cap;
+        border-color: gray;
+    }
+
+    button {
+        margin-top: 100px;
+    }
+
+    button a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    sup {
+        color: red;
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <div class="nav01">
+            <p>Home</p>
+            <ul>
+                <li>E commerce</li>
+                <li>Project management</li>
+                <li>CRM</li>
+                <li>Social feed</li>
+            </ul>
+        </div>
+        <div class="nav02">
+            <p>APPS</p>
+            <ul>
+                <li>E commerce</li>
+                <li>CRM</li>
+                <li>Project management</li>
+                <li>Chat</li>
+                <li>Email</li>
+                <li>Events</li>
+                <li>Kanban</li>
+                <li>Social</li>
+                <li>Calendar</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <p class="page"><span>page1 > page2</span> > Default</p>
+        <h1>code</h1>
+
+        <h3>기본정보</h3>
+        <div class="row align-items-start">
+            <div class="col">
+                <p>코드그룹<sup>*</sup></p>
+                <select>
+                    <option>선택하세요</option>
+                </select>
+            </div>
+            <div class="col">
+                <p class="display-none">-</p>
+            </div>
+            <div class="col">
+                <p class="display-none">-</p>
+            </div>
+            <div class="col">
+                <p class="display-none">-</p>
+            </div>
+        </div> <!--row align-->
+        <div class="row align-items-start">
+            <div class="col">
+                <p>코드<sup>*</sup></p>
+                <input type="text" placeholder="자동생성">
+            </div>
+            <div class="col">
+                <p>코드(ANOTHER)</p>
+                <input type="text" placeholder="영대소문자,숫자">
+            </div>
+            <div class="col">
+                <p>코드 이름<sup>*</sup></p>
+                <input type="text" placeholder="한글,영대소문자,숫자">
+            </div>
+            <div class="col">
+                <p>코드 이름(영문)</p>
+                <input type="text" placeholder="영대소문자,숫자">
+            </div>
+        </div> <!--row align-->
+        <div class="row align-items-start">
+            <div class="col">
+                <p>사용여부<sup>*</sup></p>
+                <select>
+                    <option>사용</option>
+                </select>
+            </div>
+            <div class="col">
+                <p>순서<sup>*</sup></p>
+                <input type="text">
+            </div>
+            <div class="col">
+                <p class="display-none">-</p>
+            </div>
+            <div class="col">
+                <p class="display-none">-</p>
+            </div>
+        </div> <!--row align-->
+        <div class="row align-items-start">
+            <div class="col">
+                <p>설명</p>
+                <textarea></textarea>
+            </div>
+            <div class="col">
+                <p class="display-none">-</p>
+            </div>
+            <div class="col">
+                <p class="display-none">-</p>
+            </div>
+            <div class="col">
+                <p class="display-none">-</p>
+            </div>
+        </div> <!--row align-->
+        <div class="row align-items-start">
+            <div class="col">
+                <p>다국어1</p>
+                <input type="text">
+            </div>
+            <div class="col">
+                <p>다국어2</p>
+                <input type="text">
+            </div>
+            <div class="col">
+                <p>다국어3</p>
+                <input type="text">
+            </div>
+            <div class="col">
+                <p>다국어4</p>
+                <input type="text">
+            </div>
+        </div> <!--row align-->
+        <div class="row align-items-start">
+            <div class="col">
+                <p>다국어5</p>
+                <input type="text">
+            </div>
+            <div class="col">
+                <p>다국어6</p>
+                <input type="text">
+            </div>
+            <div class="col">
+                <p>다국어7</p>
+                <input type="text">
+            </div>
+            <div class="col">
+                <p>다국어8</p>
+                <input type="text">
+            </div>
+        </div> <!--row align-->
+        <div class="row align-items-start">
+            <div class="col">
+                <p>예비1(VARCHAR TYPE)</p>
+                <input type="text">
+            </div>
+            <div class="col">
+                <p>예비2(VARCHAR TYPE)</p>
+                <input type="text">
+            </div>
+            <div class="col">
+                <p>예비3(VARCHAR TYPE)</p>
+                <input type="text">
+            </div>
+            <div class="col">
+                <p>예비4(VARCHAR TYPE)</p>
+                <input type="text">
+            </div>
+        </div> <!--row align-->
+        <div class="row align-items-start">
+            <div class="col">
+                <p>예비1(INT TYPE)</p>
+                <input type="text">
+            </div>
+            <div class="col">
+                <p>예비2(INT TYPE)</p>
+                <input type="text">
+            </div>
+            <div class="col">
+                <p>예비3(INT TYPE)</p>
+                <input type="text">
+            </div>
+            <div class="col">
+                <p>예비4(INT TYPE)</p>
+                <input type="text">
+            </div>
+        </div> <!--row align-->
+
+        <button><a href="../tr/list01.html">list</a></button>
+    </div> <!--container-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
